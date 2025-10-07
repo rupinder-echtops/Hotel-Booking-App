@@ -14,8 +14,8 @@ const FeatureDestination = () => {
         <Title title='Feature Destination' subTitle='Discover our handpicked selected of exceptional properties around the world, offering unparalleled luxury and unforgettable experiences'/>
 
         <div className="flex flex-wrap items-center justify-center gap-6 mt-20">
-            {roomsDummyData .slice(0.4).map((room, index)=>(
-                <HotelCard Key={room._id} room={room} index={index}/>
+            {roomsDummyData.slice(0, 4).map((room, index) => (
+                <HotelCard key={room._id} room={room} index={index} />
             ))}
         </div>
         <button onClick={()=>{navigate('/rooms'); scrollTo(0,0)}} 
